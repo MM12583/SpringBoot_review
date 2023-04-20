@@ -7,11 +7,11 @@ import org.springframework.context.ConfigurableApplicationContext;
 import com.frank.review.controller.HelloController;
 
 @SpringBootApplication
-public class SpringBootReviewApplication {
+public class Application {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext ctx = 
-        		SpringApplication.run(SpringBootReviewApplication.class, args);
+        		SpringApplication.run(Application.class, args);
 //        HelloController helloCon = ctx.getBean(HelloController.class);
 //        System.out.println("bean====>" + helloCon);
     }

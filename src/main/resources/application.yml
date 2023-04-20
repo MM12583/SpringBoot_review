@@ -1,0 +1,17 @@
+country: taiwan
+owner: frank
+
+# 數組用法
+likes:
+  - game
+  - movie
+likes2: [music, sleep]
+
+
+server:
+  port: 8080
+#  servlet:#    context-path: frank
+
+logging:  level:
+    root: error
+    
