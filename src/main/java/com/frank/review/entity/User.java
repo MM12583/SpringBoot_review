@@ -4,18 +4,12 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @EntityScan
 public class User {
-
-	private Long id;
+	
+	private Long idn;
 	
 	private String name;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
+	
+	private Integer age;
 
 	public String getName() {
 		return name;
@@ -25,11 +19,27 @@ public class User {
 		this.name = name;
 	}
 	
+	public Long getIdn() {
+		return idn;
+	}
+
+	public void setIdn(Long idn) {
+		this.idn = idn;
+	}
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		builder.append("User [id=");
-		builder.append(id);
+		builder.append(idn);
 		builder.append(", name=");
 		builder.append(name);
 		builder.append("]");
