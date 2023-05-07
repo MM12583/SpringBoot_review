@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.frank.review.entity.User;
+import com.frank.review.entity.Users;
 
 @RestController
 @RequestMapping(path = "/users")
@@ -34,7 +34,7 @@ public class UserController2 {
 	}
 	
 	@PutMapping
-	public String update(@RequestBody User user) {
+	public String update(@RequestBody Users user) {
 		
 		System.out.println("user update..." + user);
 		

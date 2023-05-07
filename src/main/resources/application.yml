@@ -16,9 +16,9 @@ logging:  level:
     root: error
     
 spring:  datasource:     driver-class-name: com.mysql.cj.jdbc.Driver 
-     url: jdbc:mysql://localhost:3306/springbootreview?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
-     username: root
-     password: mm12583
+     url: jdbc:mysql://aws-first-database.ckkpuswf8ke8.ap-southeast-2.rds.amazonaws.com:3306/springbootreview?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+     username: admin
+     password: mm12583$
     
     
     

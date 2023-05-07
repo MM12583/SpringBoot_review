@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.frank.review.entity.User;
+import com.frank.review.entity.Users;
 
 @Controller
 public class UserController {
@@ -34,7 +34,7 @@ public class UserController {
 	
 	@RequestMapping(path = "/usersOld", method = RequestMethod.PUT) 
 	@ResponseBody
-	public String update(@RequestBody User user) {
+	public String update(@RequestBody Users user) {
 		
 		System.out.println("user update..." + user);
 		

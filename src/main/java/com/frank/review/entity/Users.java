@@ -3,9 +3,9 @@ package com.frank.review.entity;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @EntityScan
-public class User {
+public class Users {
 	
-	private Long idn;
+	private String idn;
 	
 	private String name;
 	
@@ -19,11 +19,11 @@ public class User {
 		this.name = name;
 	}
 	
-	public Long getIdn() {
+	public String getIdn() {
 		return idn;
 	}
 
-	public void setIdn(Long idn) {
+	public void setIdn(String idn) {
 		this.idn = idn;
 	}
 
@@ -38,10 +38,12 @@ public class User {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("User [id=");
+		builder.append("Users [idn=");
 		builder.append(idn);
 		builder.append(", name=");
 		builder.append(name);
+		builder.append(", age=");
+		builder.append(age);
 		builder.append("]");
 		return builder.toString();
 	}
